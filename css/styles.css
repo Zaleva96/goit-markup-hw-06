@@ -263,7 +263,9 @@ button {
   position: absolute;
   top: 24px;
   right: 24px;
-  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -271,9 +273,14 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  stroke-width: 1px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
 .mobile-menu-icon-close {
@@ -356,8 +363,81 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* HERO */
+.section-hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-color: #2e2f42;
+  padding: 72px 0;
+  max-width: 321px;
+  height: 432px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title-item {
+  margin: auto;
+  margin-bottom: 72px;
+  width: 216px;
+  height: 160px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: white;
+}
+
+.hero-button-open {
+  display: block;
+  min-width: 169px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  height: 56px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button-open:hover,
+.hero-button-open:focus {
+  background-color: #404bbf;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
+}
+
+.section-hero {
+  padding: 112px 0;
+  max-width: 768px;
+  height: 436px;
+}
+
+.hero-title-item {
+  margin-bottom: 36px;
+  width: 496x;
+  height: 120px;
+  font-size: 56px;
+  line-height: 107%;
+}
+
+.hero-button-open {
+  margin-top: 36px;
 }

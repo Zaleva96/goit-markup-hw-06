@@ -422,22 +422,226 @@ button {
   .mobile-menu {
     display: none;
   }
+
+  .section-hero {
+    padding: 112px 0;
+    max-width: 768px;
+    height: 436px;
+  }
+
+  .hero-title-item {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    width: 496px;
+    height: 120px;
+    margin-bottom: 36px;
+  }
 }
 
-.section-hero {
-  padding: 112px 0;
-  max-width: 768px;
-  height: 436px;
+@media screen and (min-width: 1158px) {
+  .section-hero {
+    padding: 188px 0;
+    max-width: 1440px;
+    height: 600px;
+  }
+
+  .hero-title-item {
+    margin-bottom: 48px;
+  }
 }
 
-.hero-title-item {
-  margin-bottom: 36px;
-  width: 496x;
-  height: 120px;
-  font-size: 56px;
-  line-height: 107%;
+/* principles */
+
+.class-name {
+  display: none;
+}
+.princip {
+  padding: 96px 0;
 }
 
-.hero-button-open {
-  margin-top: 36px;
+.icon-princip {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
+}
+
+.princip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+.princip-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.princip-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+  .class-name {
+    display: none;
+  }
+
+  .princip-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .princip-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .princip-title {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  .princip-text {
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .princip {
+    padding: 120px 0;
+  }
+
+  .class-name {
+    display: block;
+  }
+
+  .icon-princip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+  }
+
+  .princip-title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .princip-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .princip-item {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+/*our team */
+.our-team {
+  display: flex;
+  max-width: 320px;
+  height: 2232px;
+  background-color: #f4f4fd;
+  padding-bottom: 96px;
+}
+
+.our-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  padding-bottom: 72px;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+.our-team-item {
+  /* width: calc((100% - 72px) / 4); */
+  border-radius: 0px 0px 4px 4px;
+  color: #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.our-team-container {
+  padding: 32px 0;
+}
+
+.our-team-specialists {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.our-team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+  background-color: #ffffff;
+  padding-bottom: 8px;
+}
+
+.our-team-links-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.our-team-links-item {
+  width: 40px;
+  height: 40px;
+}
+.our-team-links {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-team-links:hover {
+  background-color: #404bbf;
+}
+.our-team-links:focus,
+.our-team-links:active {
+  background-color: #404bbf;
+}
+.class-icon {
+  fill: #f4f4fd;
 }

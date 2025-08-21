@@ -559,8 +559,6 @@ button {
 /*our team */
 .our-team {
   display: flex;
-  max-width: 320px;
-  height: 2232px;
   background-color: #f4f4fd;
   padding-bottom: 96px;
 }
@@ -574,13 +572,14 @@ button {
   color: #2e2f42;
   padding-bottom: 72px;
   justify-content: center;
-  padding-bottom: 8px;
 }
 
 .our-team-list {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  align-items: center;
+  justify-content: center;
 }
 .our-team-item {
   /* width: calc((100% - 72px) / 4); */
@@ -644,4 +643,24 @@ button {
 }
 .class-icon {
   fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team-container {
+  }
+
+  .our-team-title {
+    padding-bottom: 72px;
+  }
+
+  .our-team-list {
+    gap: 24px;
+    row-gap: 64px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .our-team {
+    padding: 120px 0;
+  }
 }

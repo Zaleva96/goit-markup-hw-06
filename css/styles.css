@@ -369,11 +369,14 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    image-set(
+      url("../images/title-img/title-mobil-min.png") 1x,
+      url("../images/title-img/title-mobil@2x-min.png") 2x
+    );
+
   background-color: #2e2f42;
   padding: 72px 0;
-  max-width: 321px;
-  height: 432px;
+  max-width: 320px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -426,7 +429,14 @@ button {
   .section-hero {
     padding: 112px 0;
     max-width: 768px;
-    height: 436px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      image-set(
+        url("../images/title-img/title-img-tabl-min.png") 1x,
+        url("../images/title-img/title-img-tabl@2x-min.png") 2x
+      );
   }
 
   .hero-title-item {
@@ -444,7 +454,15 @@ button {
   .section-hero {
     padding: 188px 0;
     max-width: 1440px;
-    height: 600px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      image-set(
+        url("../images/title-img/title-img-desk-min.png") 1x,
+        url("../images/title-img/title-img-desk@2x-min.png") 2x
+      );
+    background-size: cover;
   }
 
   .hero-title-item {
@@ -663,4 +681,62 @@ button {
   .our-team {
     padding: 120px 0;
   }
+}
+
+/* our portfolio */
+.text-img {
+  display: none;
+}
+
+.our-portfolio {
+  padding: 96px;
+  padding-bottom: 96px;
+}
+
+.our-portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+  padding-bottom: 72px;
+}
+
+.our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* column-gap: 24px; */
+  row-gap: 48px 16px;
+  justify-items: center;
+}
+
+.our-portfolio-item {
+  width: 288px;
+  height: 400px;
+}
+
+.portfolio-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.our-portfolio-pay {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.our-portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }

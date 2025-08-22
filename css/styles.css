@@ -689,6 +689,7 @@ button {
 }
 
 .our-portfolio {
+  display: flex;
   padding: 96px;
   padding-bottom: 96px;
 }
@@ -710,10 +711,11 @@ button {
   /* column-gap: 24px; */
   row-gap: 48px 16px;
   justify-items: center;
+  align-items: center;
 }
 
 .our-portfolio-item {
-  width: 288px;
+  max-width: 288px;
   height: 400px;
 }
 
@@ -722,6 +724,7 @@ button {
   border: 1px solid #e7e9fc;
   border-top: none;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  align-items: center;
 }
 
 .our-portfolio-pay {
@@ -739,4 +742,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.our-portfolio-conteiner-img {
+  width: 288px;
 }

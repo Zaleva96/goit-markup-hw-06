@@ -299,7 +299,10 @@ button {
   font-size: 36px;
   line-height: 111%;
   letter-spacing: 0.02em;
-  color: #000080;
+  color: #414cbf;
+}
+.link-logo-mobile {
+  color: #2e2f42;
 }
 
 .mobile-menu-nav {
@@ -307,12 +310,11 @@ button {
 }
 
 .nav-mobile-list-item {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
   line-height: 111%;
   letter-spacing: 0.02em;
-  color: var(--navy-blue);
+  color: #000080;
 }
 
 .nav-list-mobile-menu {
@@ -320,7 +322,13 @@ button {
   flex-direction: column;
   gap: 40px;
 }
-.mobile-adress {
+.address-mobile-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #4e5be6;
+  font-style: normal;
 }
 
 .address-mobile-list {
@@ -374,8 +382,8 @@ button {
       rgba(46, 47, 66, 0.7)
     ),
     image-set(
-      url("../images/title-img/title-mobil-min.png") 1x,
-      url("../images/title-img/title-mobil@2x-min.png") 2x
+      url("../images/title-img-tabl-min.png") 1x,
+      url("../images/title-img-tabl@2x-min.png") 2x
     );
 
   background-color: #2e2f42;
@@ -438,8 +446,8 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       image-set(
-        url("../images/title-img/title-img-tabl-min.png") 1x,
-        url("../images/title-img/title-img-tabl@2x-min.png") 2x
+        url("../images/title-img-tabl-min.png") 1x,
+        url("../images/title-img-tabl@2x-min.png") 2x
       );
   }
 
@@ -510,7 +518,7 @@ button {
 .princip-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
 }
@@ -583,6 +591,7 @@ button {
   display: flex;
   background-color: #f4f4fd;
   padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 .our-team-title {
@@ -710,14 +719,14 @@ button {
 .our-portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  /* column-gap: 24px; */
+  column-gap: 24px;
   row-gap: 48px 16px;
   justify-items: center;
   align-items: center;
 }
 
 .our-portfolio-item {
-  max-width: 288px;
+  padding-bottom: 48px;
 }
 
 .portfolio-container {
@@ -762,12 +771,15 @@ button {
   .our-portfolio-list {
     gap: 40px;
     row-gap: 72px;
-    padding-right: 16px;
     justify-content: center;
   }
 
   .our-portfolio-item {
-    max-width: 356x;
+    padding-bottom: 0px;
+  }
+
+  .our-portfolio-item {
+    width: 356x;
   }
 }
 
@@ -798,7 +810,7 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: #f4f4fd;
     padding: 40px 32px;
     background-color: #4d5ae5;
     height: 100%;
@@ -808,6 +820,9 @@ button {
   }
   .our-portfolio-item:hover .text-img {
     transform: translateY(0%);
+  }
+  .our-portfolio-conteiner-img {
+    width: 360px;
   }
 }
 
